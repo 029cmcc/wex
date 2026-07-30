@@ -3,7 +3,6 @@
   "keep_keys": [
     "Douban",
     "Wexconfig",
-
     "玩偶",
     "AiNewMuOu",
     "二小",
@@ -12,12 +11,10 @@
     "AiNewDuoDuo",
     "AiNewGuanYing",
     "AiQwMkv",
-
     "WexAiReBo",
     "WexAiGuaZi",
     "WexAiDuBoKu",
     "WexAiWenCai",
-
     "AiNewShanDian",
     "WexAiWenCaiMiao",
     "WexAiHanJu",
@@ -25,7 +22,6 @@
     "WexAiTaiGou",
     "WexAiJianPian",
     "WexAiYiYing",
-
     "WexAiFanShu",
     "WexAiMiaoWu",
     "WexAiHuaHai",
@@ -52,7 +48,6 @@
   "rename": {
     "Douban": "✧豆瓣┃导航✧",
     "Wexconfig": "✧设置┃中心✧",
-
     "玩偶": "✧玩偶┃4K✧",
     "AiNewMuOu": "✧木偶┃4K✧",
     "二小": "✧二小┃4K✧",
@@ -61,12 +56,10 @@
     "AiNewDuoDuo": "✧多多┃4K✧",
     "AiNewGuanYing": "✧观影┃4K✧",
     "AiQwMkv": "✧七味┃4K✧",
-
     "WexAiReBo": "✧热播┃影视✧",
     "WexAiGuaZi": "✧瓜子┃影视✧",
     "WexAiDuBoKu": "✧独播┃影视✧",
     "WexAiWenCai": "✧文才┃影视✧",
-
     "AiNewShanDian": "✧闪电┃秒播✧",
     "WexAiWenCaiMiao": "✧文才┃秒播✧",
     "WexAiHanJu": "✧韩剧┃秒播✧",
@@ -74,7 +67,6 @@
     "WexAiTaiGou": "✧太狗┃秒播✧",
     "WexAiJianPian": "✧贱片┃秒播✧",
     "WexAiYiYing": "✧伊影┃秒播✧",
-
     "WexAiFanShu": "✧番薯┃动漫✧",
     "WexAiMiaoWu": "✧喵呜┃动漫✧",
     "WexAiHuaHai": "✧花海┃动漫✧",
@@ -83,7 +75,6 @@
   "order": [
     "Douban",
     "Wexconfig",
-
     "玩偶",
     "AiNewMuOu",
     "二小",
@@ -92,12 +83,10 @@
     "AiNewDuoDuo",
     "AiNewGuanYing",
     "AiQwMkv",
-
     "WexAiReBo",
     "WexAiGuaZi",
     "WexAiDuBoKu",
     "WexAiWenCai",
-
     "AiNewShanDian",
     "WexAiWenCaiMiao",
     "WexAiHanJu",
@@ -105,7 +94,6 @@
     "WexAiTaiGou",
     "WexAiJianPian",
     "WexAiYiYing",
-
     "WexAiFanShu",
     "WexAiMiaoWu",
     "WexAiHuaHai",
