@@ -16,9 +16,10 @@ def save_json(file, data):
 
 
 def download(url):
-    print("================")
-    print("下载接口：")
+    print("=" * 40)
+    print("正在下载接口：")
     print(url)
+    print("=" * 40)
 
     req = urllib.request.Request(
         url,
@@ -33,94 +34,65 @@ def download(url):
                 r.read().decode("utf-8")
             )
     except Exception as e:
-        raise Exception(f"接口获取失败：{e}")
+        raise Exception(f"下载失败：{e}")
 
 
 def main():
+
     cfg = load_json(CONFIG_FILE)
 
     data = download(cfg["source"])
 
     if "sites" not in data:
-        raise Exception("接口异常，没有 sites 字段")
+        raise Exception("接口异常：没有 sites 字段")
 
     sites = data["sites"]
 
-    print("================")
-    print("原始站点：", len(sites))
+    print(f"接口站点数量：{len(sites)}")
 
     keep_keys = set(cfg.get("keep_keys", []))
-    remove_keywords = cfg.get("remove_keywords", [])
     rename = cfg.get("rename", {})
     order = cfg.get("order", [])
 
-    result = []
+    site_map = {}
 
+    # 保留指定站点
     for site in sites:
-        key = site.get("key", "")
-        name = site.get("name", "")
 
-        # 优先保留
-        if key in keep_keys:
-            new_site = site.copy()
+        key = site.get("key")
 
-            if key in rename:
-                new_site["name"] = rename[key]
-
-            result.append(new_site)
+        if key not in keep_keys:
             continue
 
-        # 关键词过滤
-        text = key + name
+        new_site = site.copy()
 
-        remove = False
+        if key in rename:
+            new_site["name"] = rename[key]
 
-        for word in remove_keywords:
-            if word in text:
-                remove = True
-                break
+        site_map[key] = new_site
 
-        if remove:
-            continue
-
-    # 建立映射
-    site_map = {
-        site["key"]: site
-        for site in result
-    }
-
+    # 按顺序输出
     new_sites = []
-    used = set()
 
-    # 按配置排序
     for key in order:
         if key in site_map:
             new_sites.append(site_map[key])
-            used.add(key)
-
-    # 没写到 order 的放最后
-    for key, site in site_map.items():
-        if key not in used:
-            new_sites.append(site)
 
     data["sites"] = new_sites
 
-    print("================")
-    print("过滤后站点：", len(new_sites))
-    print("================")
-
-    for site in new_sites:
-        print(
-            site.get("key"),
-            "|",
-            site.get("name")
-        )
-
-    print("================")
-
     save_json(OUTPUT_FILE, data)
 
-    print("生成完成：", OUTPUT_FILE)
+    print("=" * 40)
+    print(f"最终保留：{len(new_sites)} 个站点")
+    print("=" * 40)
+
+    for i, site in enumerate(new_sites, 1):
+        print(
+            f"{i:02d}. {site['name']} ({site['key']})"
+        )
+
+    print("=" * 40)
+    print(f"已生成 {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
