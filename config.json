@@ -1,6 +1,5 @@
 {
   "source": "https://9280.kstore.vip/aiwex.json",
-
   "keep_keys": [
     "Douban",
     "Wexconfig",
@@ -17,14 +16,24 @@
     "WexAiReBo",
     "WexAiGuaZi",
     "WexAiDuBoKu",
-    "WexAiWenCai"
-  ],
+    "WexAiWenCai",
 
+    "AiNewShanDian",
+    "WexAiWenCaiMiao",
+    "WexAiHanJu",
+    "WexAiShiXiong",
+    "WexAiTaiGou",
+    "WexAiJianPian",
+    "WexAiYiYing",
+
+    "WexAiFanShu",
+    "WexAiMiaoWu",
+    "WexAiHuaHai",
+    "WexAiMoDu"
+  ],
   "remove_keywords": [
     "直播",
     "短剧",
-    "动漫",
-    "动画",
     "听书",
     "儿歌",
     "音乐",
@@ -40,7 +49,6 @@
     "推送",
     "DIY"
   ],
-
   "rename": {
     "Douban": "✧豆瓣┃导航✧",
     "Wexconfig": "✧设置┃中心✧",
@@ -57,9 +65,21 @@
     "WexAiReBo": "✧热播┃影视✧",
     "WexAiGuaZi": "✧瓜子┃影视✧",
     "WexAiDuBoKu": "✧独播┃影视✧",
-    "WexAiWenCai": "✧文才┃影视✧"
-  },
+    "WexAiWenCai": "✧文才┃影视✧",
 
+    "AiNewShanDian": "✧闪电┃秒播✧",
+    "WexAiWenCaiMiao": "✧文才┃秒播✧",
+    "WexAiHanJu": "✧韩剧┃秒播✧",
+    "WexAiShiXiong": "✧师兄┃秒播✧",
+    "WexAiTaiGou": "✧太狗┃秒播✧",
+    "WexAiJianPian": "✧贱片┃秒播✧",
+    "WexAiYiYing": "✧伊影┃秒播✧",
+
+    "WexAiFanShu": "✧番薯┃动漫✧",
+    "WexAiMiaoWu": "✧喵呜┃动漫✧",
+    "WexAiHuaHai": "✧花海┃动漫✧",
+    "WexAiMoDu": "✧魔都┃动漫✧"
+  },
   "order": [
     "Douban",
     "Wexconfig",
@@ -76,6 +96,19 @@
     "WexAiReBo",
     "WexAiGuaZi",
     "WexAiDuBoKu",
-    "WexAiWenCai"
+    "WexAiWenCai",
+
+    "AiNewShanDian",
+    "WexAiWenCaiMiao",
+    "WexAiHanJu",
+    "WexAiShiXiong",
+    "WexAiTaiGou",
+    "WexAiJianPian",
+    "WexAiYiYing",
+
+    "WexAiFanShu",
+    "WexAiMiaoWu",
+    "WexAiHuaHai",
+    "WexAiMoDu"
   ]
 }
