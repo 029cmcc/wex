@@ -1,7 +1,7 @@
 {
   "source": "https://9280.kstore.vip/aiwex.json",
 
-  "keep_keys": [
+  "sites_order": [
     "Douban",
     "Wexconfig",
 
@@ -57,34 +57,5 @@
 
     "WexAiYueYue": "✧闪电┃秒播✧",
     "WexAiV6DaShiXiong": "✧师兄┃秒播✧"
-  },
-
-  "order": [
-    "Douban",
-    "Wexconfig",
-
-    "玩偶",
-    "AiNewMuOu",
-    "二小",
-    "NewZhiZhen",
-    "AiNewDuoDuo",
-    "AiNewHuBan",
-    "AiNewYiDong4K",
-    "蜗牛",
-    "AiNewJuTou",
-    "AiNewLibvio",
-    "原盘",
-    "AiNewGuanYing",
-    "AiQwMkv",
-    "AiNewPanLian",
-    "AiNewPianKu",
-    "AiPan1Me",
-
-    "WexAiReBo",
-    "WexAiGuaZi",
-    "WexAiDuBoKu",
-
-    "WexAiYueYue",
-    "WexAiV6DaShiXiong"
-  ]
+  }
 }
