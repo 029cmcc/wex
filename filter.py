@@ -1,7 +1,7 @@
 import json
 import urllib.request
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 
 # ==========================
@@ -162,8 +162,6 @@ def main():
 
 
 
-    # 保留顺序
-
     order = cfg.get(
 
         "sites_order",
@@ -173,8 +171,6 @@ def main():
     )
 
 
-
-    # 改名
 
     rename = cfg.get(
 
@@ -200,10 +196,6 @@ def main():
 
 
 
-    # ======================
-    # 过滤
-    # ======================
-
     for site in source_sites:
 
 
@@ -226,8 +218,6 @@ def main():
 
 
 
-        # 重复 key 检测
-
         if key in site_map:
 
             print(
@@ -244,8 +234,6 @@ def main():
 
 
 
-        # 修改显示名称
-
         if key in rename:
 
             new_site["name"] = rename[key]
@@ -256,10 +244,6 @@ def main():
 
 
 
-
-    # ======================
-    # 输出顺序
-    # ======================
 
     sites = []
 
@@ -284,10 +268,6 @@ def main():
 
 
 
-    # ======================
-    # 缺失提示
-    # ======================
-
     if missing:
 
         print()
@@ -298,13 +278,7 @@ def main():
 
         for m in missing:
 
-            print(
-
-                "-",
-
-                m
-
-            )
+            print("-", m)
 
         print("====================")
 
@@ -320,12 +294,7 @@ def main():
 
 
 
-    # ======================
-    # 保留源接口全部字段
-    # ======================
-
     result = data.copy()
-
 
     result["sites"] = sites
 
@@ -341,8 +310,15 @@ def main():
 
 
 
-    end_time = datetime.now()
+    # ==========================
+    # UTC+8 时间
+    # ==========================
 
+    end_time = datetime.now(
+        timezone(
+            timedelta(hours=8)
+        )
+    )
 
 
     print()
@@ -363,7 +339,7 @@ def main():
 
         "耗时:",
 
-        str(end_time - start_time)
+        str(datetime.now() - start_time)
 
     )
 
