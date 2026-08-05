@@ -1,16 +1,17 @@
 import json
 import urllib.request
 import os
+from datetime import datetime
 
 
 # ==========================
-# 源接口地址
+# 原作者源接口（固定）
 # ==========================
 
 SOURCE = "https://9280.kstore.vip/aiwex.json"
 
 
-# 输出文件
+# 文件
 
 CONFIG_FILE = "config.json"
 
@@ -19,7 +20,7 @@ OUTPUT_FILE = "fish.json"
 
 
 # ==========================
-# 读取JSON
+# 读取 JSON
 # ==========================
 
 def load_json(file):
@@ -35,7 +36,7 @@ def load_json(file):
 
 
 # ==========================
-# 保存JSON
+# 保存 JSON
 # ==========================
 
 def save_json(file, data):
@@ -104,7 +105,6 @@ def fetch_source():
 
     except Exception as e:
 
-
         raise Exception(
 
             f"接口获取失败: {e}"
@@ -120,6 +120,10 @@ def fetch_source():
 def main():
 
 
+    start_time = datetime.now()
+
+
+
     if not os.path.exists(CONFIG_FILE):
 
         raise Exception(
@@ -127,6 +131,7 @@ def main():
             "找不到 config.json"
 
         )
+
 
 
     cfg = load_json(CONFIG_FILE)
@@ -151,13 +156,13 @@ def main():
 
         raise Exception(
 
-            "源接口没有sites数据"
+            "源接口没有 sites 数据"
 
         )
 
 
 
-    # 排序列表
+    # 保留顺序
 
     order = cfg.get(
 
@@ -169,7 +174,7 @@ def main():
 
 
 
-    # 名称替换
+    # 改名
 
     rename = cfg.get(
 
@@ -187,16 +192,16 @@ def main():
 
     print()
 
-    print(
+    print("====================")
 
-        "开始过滤站点..."
+    print("开始过滤站点...")
 
-    )
+    print("====================")
 
 
 
     # ======================
-    # 过滤+改名
+    # 过滤
     # ======================
 
     for site in source_sites:
@@ -221,13 +226,25 @@ def main():
 
 
 
-        # 复制对象
+        # 重复 key 检测
+
+        if key in site_map:
+
+            print(
+
+                "发现重复 key:",
+
+                key
+
+            )
+
+
 
         new_site = site.copy()
 
 
 
-        # 改名字
+        # 修改显示名称
 
         if key in rename:
 
@@ -241,10 +258,12 @@ def main():
 
 
     # ======================
-    # 按顺序输出
+    # 输出顺序
     # ======================
 
     sites = []
+
+    missing = []
 
 
 
@@ -253,12 +272,41 @@ def main():
 
         if key in site_map:
 
-
             sites.append(
 
                 site_map[key]
 
             )
+
+        else:
+
+            missing.append(key)
+
+
+
+    # ======================
+    # 缺失提示
+    # ======================
+
+    if missing:
+
+        print()
+
+        print("====================")
+
+        print("以下站点未找到:")
+
+        for m in missing:
+
+            print(
+
+                "-",
+
+                m
+
+            )
+
+        print("====================")
 
 
 
@@ -266,7 +314,7 @@ def main():
 
         raise Exception(
 
-            "没有匹配到任何站点，请检查key"
+            "没有匹配到任何站点，请检查 config.json"
 
         )
 
@@ -293,21 +341,41 @@ def main():
 
 
 
+    end_time = datetime.now()
+
+
+
     print()
 
     print("====================")
 
-    print(
-
-        "生成完成"
-
-    )
+    print("生成完成")
 
     print(
 
         "站点数量:",
 
         len(sites)
+
+    )
+
+    print(
+
+        "耗时:",
+
+        str(end_time - start_time)
+
+    )
+
+    print(
+
+        "时间:",
+
+        end_time.strftime(
+
+            "%Y-%m-%d %H:%M:%S"
+
+        )
 
     )
 
@@ -325,20 +393,28 @@ def main():
 
         print(
 
-            f"{i:02d}. {s.get('name','')}"
+            f"{i:02d}. "
 
-            f"  [{s.get('key','')}]"
+            f"{s.get('name','')}"
+
+            f" [{s.get('key','')}]"
 
         )
+
 
 
     print("====================")
 
     print(
 
-        f"输出文件: {OUTPUT_FILE}"
+        "输出文件:",
+
+        OUTPUT_FILE
 
     )
+
+    print("====================")
+
 
 
 
