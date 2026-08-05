@@ -4,26 +4,30 @@
   "keep_keys": [
     "Douban",
     "Wexconfig",
+
     "玩偶",
     "AiNewMuOu",
     "二小",
     "NewZhiZhen",
-    "AiNewYiDong4K",
     "AiNewDuoDuo",
+    "AiNewHuBan",
+    "AiNewYiDong4K",
+    "蜗牛",
+    "AiNewJuTou",
+    "AiNewLibvio",
+    "原盘",
     "AiNewGuanYing",
     "AiQwMkv",
+    "AiNewPanLian",
+    "AiNewPianKu",
+    "AiPan1Me",
+
     "WexAiReBo",
     "WexAiGuaZi",
     "WexAiDuBoKu",
+
     "WexAiYueYue",
-    "WexHanXiaoQuan",
-    "WexAiV6DaShiXiong",
-    "WexAiV6TeGou",
-    "賤賤",
-    "WexAiYiYs",
-    "AnimeAiMiaoWu",
-    "AnimeAiHuazi",
-    "AnimeAiMoDu"
+    "WexAiV6DaShiXiong"
   ],
 
   "rename": {
@@ -34,25 +38,25 @@
     "AiNewMuOu": "✧木偶┃4K✧",
     "二小": "✧二小┃4K✧",
     "NewZhiZhen": "✧至臻┃4K✧",
-    "AiNewYiDong4K": "✧逸动┃4K✧",
     "AiNewDuoDuo": "✧多多┃4K✧",
+    "AiNewHuBan": "✧虎斑┃4K✧",
+    "AiNewYiDong4K": "✧逸动┃4K✧",
+    "蜗牛": "✧蜗牛┃4K✧",
+    "AiNewJuTou": "✧剧透┃4K✧",
+    "AiNewLibvio": "✧立播┃4K✧",
+    "原盘": "✧原盘┃4K✧",
     "AiNewGuanYing": "✧观影┃4K✧",
     "AiQwMkv": "✧七味┃4K✧",
+    "AiNewPanLian": "✧盘链┃4K✧",
+    "AiNewPianKu": "✧盘库┃4K✧",
+    "AiPan1Me": "✧盘迷┃4K✧",
 
     "WexAiReBo": "✧热播┃影视✧",
     "WexAiGuaZi": "✧瓜子┃影视✧",
     "WexAiDuBoKu": "✧独播┃影视✧",
 
     "WexAiYueYue": "✧闪电┃秒播✧",
-    "WexHanXiaoQuan": "✧韩剧┃秒播✧",
-    "WexAiV6DaShiXiong": "✧师兄┃秒播✧",
-    "WexAiV6TeGou": "✧太狗┃秒播✧",
-    "賤賤": "✧贱片┃秒播✧",
-    "WexAiYiYs": "✧伊影┃秒播✧",
-
-    "AnimeAiMiaoWu": "✧喵呜┃动漫✧",
-    "AnimeAiHuazi": "✧花海┃动漫✧",
-    "AnimeAiMoDu": "✧魔都┃动漫✧"
+    "WexAiV6DaShiXiong": "✧师兄┃秒播✧"
   },
 
   "order": [
@@ -63,25 +67,24 @@
     "AiNewMuOu",
     "二小",
     "NewZhiZhen",
-    "AiNewYiDong4K",
     "AiNewDuoDuo",
+    "AiNewHuBan",
+    "AiNewYiDong4K",
+    "蜗牛",
+    "AiNewJuTou",
+    "AiNewLibvio",
+    "原盘",
     "AiNewGuanYing",
     "AiQwMkv",
+    "AiNewPanLian",
+    "AiNewPianKu",
+    "AiPan1Me",
 
     "WexAiReBo",
     "WexAiGuaZi",
     "WexAiDuBoKu",
 
     "WexAiYueYue",
-    "WexAiWenCai",
-    "WexHanXiaoQuan",
-    "WexAiV6DaShiXiong",
-    "WexAiV6TeGou",
-    "賤賤",
-    "WexAiYiYs",
-
-    "AnimeAiMiaoWu",
-    "AnimeAiHuazi",
-    "AnimeAiMoDu"
+    "WexAiV6DaShiXiong"
   ]
 }
