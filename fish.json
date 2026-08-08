@@ -189,30 +189,71 @@
       "changeable": 0
     },
     {
-      "key": "WexAiDuBoKu",
-      "name": "✧独播┃影视✧",
+      "key": "DuanJuAiHaoKan",
+      "name": "✧好看┃短剧✧",
       "type": 3,
-      "api": "csp_WexAiDuBoKuGuard",
+      "类型": "短剧",
+      "api": "csp_DuanJuAiHaoKanGuard",
       "searchable": 1,
-      "quickSearch": 1,
       "changeable": 0
     },
     {
-      "key": "WexAiYueYue",
-      "name": "✧闪电┃秒播✧",
+      "key": "DuanJuAiQiMiao",
+      "name": "✧小猫┃短剧✧",
       "type": 3,
-      "api": "csp_WexAiYueYueGuard",
+      "类型": "短剧",
+      "api": "csp_DuanJuAiQiMiaoGuard",
       "searchable": 1,
-      "quickSearch": 1,
       "changeable": 0
     },
     {
-      "key": "WexAiV6DaShiXiong",
-      "name": "✧师兄┃秒播✧",
+      "key": "DuanJuAiXingYa",
+      "name": "✧星星┃短剧✧",
       "type": 3,
-      "api": "csp_WexAiV6DaShiXiongGuard",
+      "类型": "短剧",
+      "api": "csp_DuanJuAiXingYaGuard",
       "searchable": 1,
-      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "DuanJuAiWeiGuan",
+      "name": "✧小薇┃短剧✧",
+      "type": 3,
+      "类型": "短剧",
+      "api": "csp_DuanJuAiWeiGuanGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAiQingTing",
+      "name": "✧蜻蜓┃电台✧",
+      "type": 3,
+      "api": "csp_MusicAiQingTingGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAiKuWoa",
+      "name": "✧小酷┃音乐✧",
+      "type": 3,
+      "api": "csp_MusicAiKuWoaGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAi163",
+      "name": "✧易听┃音乐✧",
+      "type": 3,
+      "api": "csp_MusicAi163Guard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAiKuWo",
+      "name": "✧酷听┃音乐✧",
+      "type": 3,
+      "api": "csp_MusicAiKuWoGuard",
+      "searchable": 1,
       "changeable": 0
     }
   ],
