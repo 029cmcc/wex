@@ -1,10 +1,8 @@
 {
   "source": "https://9280.kstore.vip/aiwex.json",
-
   "sites_order": [
     "Douban",
     "Wexconfig",
-
     "玩偶",
     "AiNewMuOu",
     "二小",
@@ -21,19 +19,20 @@
     "AiNewPanLian",
     "AiNewPianKu",
     "AiPan1Me",
-
     "WexAiReBo",
     "WexAiGuaZi",
-    "WexAiDuBoKu",
-
-    "WexAiYueYue",
-    "WexAiV6DaShiXiong"
+    "DuanJuAiHaoKan",
+    "DuanJuAiQiMiao",
+    "DuanJuAiXingYa",
+    "DuanJuAiWeiGuan",
+    "MusicAiQingTing",
+    "MusicAiKuWoa",
+    "MusicAi163",
+    "MusicAiKuWo"
   ],
-
   "rename": {
     "Douban": "✧豆瓣┃导航✧",
     "Wexconfig": "✧设置┃中心✧",
-
     "玩偶": "✧玩偶┃4K✧",
     "AiNewMuOu": "✧木偶┃4K✧",
     "二小": "✧二小┃4K✧",
@@ -50,12 +49,15 @@
     "AiNewPanLian": "✧盘链┃4K✧",
     "AiNewPianKu": "✧盘库┃4K✧",
     "AiPan1Me": "✧盘迷┃4K✧",
-
     "WexAiReBo": "✧热播┃影视✧",
     "WexAiGuaZi": "✧瓜子┃影视✧",
-    "WexAiDuBoKu": "✧独播┃影视✧",
-
-    "WexAiYueYue": "✧闪电┃秒播✧",
-    "WexAiV6DaShiXiong": "✧师兄┃秒播✧"
+    "DuanJuAiHaoKan": "✧好看┃短剧✧",
+    "DuanJuAiQiMiao": "✧小猫┃短剧✧",
+    "DuanJuAiXingYa": "✧星星┃短剧✧",
+    "DuanJuAiWeiGuan": "✧小薇┃短剧✧",
+    "MusicAiQingTing": "✧蜻蜓┃电台✧",
+    "MusicAiKuWoa": "✧小酷┃音乐✧",
+    "MusicAi163": "✧易听┃音乐✧",
+    "MusicAiKuWo": "✧酷听┃音乐✧"
   }
 }
